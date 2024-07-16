@@ -377,7 +377,7 @@ check_for_firefox ()
 check_for_chrome ()
 {
     # Check to see if Chrome exists
-    if command -v google-chrome >/dev/null
+    if command -v google-chrome >/dev/null || command -v vivaldi >/dev/null
     then
         chrome_exists=true
         print_info "Found Google Chrome."
